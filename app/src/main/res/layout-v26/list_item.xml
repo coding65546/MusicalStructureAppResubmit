@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_cover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/text_view_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageView_cover"
+        android:layout_marginHorizontal="@dimen/margin2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageView_cover"
+        android:layout_marginHorizontal="@dimen/margin2"
+        android:layout_below="@id/text_view_song"
+        android:textSize="20sp" />
+
+</RelativeLayout>

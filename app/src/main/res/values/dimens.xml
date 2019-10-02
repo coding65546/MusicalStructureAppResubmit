@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin1">16dp</dimen>
+    <dimen name="margin2">8dp</dimen>
+    <dimen name="margin3">24dp</dimen>
+    <dimen name="button1">36dp</dimen>
+    <dimen name="button2">64dp</dimen>
+    <dimen name="relativeLayout">84dp</dimen>
+    <dimen name="textSize1">20sp</dimen>
+    <dimen name="textSize2">24sp</dimen>
+    <dimen name="smallCover">100dp</dimen>
+    <dimen name="largeCoverWidth">300dp</dimen>
+    <dimen name="largeCoverHeight">15dp</dimen>
+</resources>

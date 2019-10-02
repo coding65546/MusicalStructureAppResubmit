@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.musicalstructureapp.NowPlayingActivity">
+
+    <!-- Song Cover -->
+    <ImageView
+        android:id="@+id/now_playing_song_image"
+        android:layout_width="@dimen/largeCoverWidth"
+        android:layout_height="@dimen/largeCoverHeight"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:src="@drawable/tamino_habibi" />
+
+    <!-- Song Name -->
+    <TextView
+        android:id="@+id/now_playing_song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:gravity="center|bottom"
+        tools:text="Song Name"
+        android:textSize="@dimen/textSize2" />
+
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/now_playing_artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:gravity="center|top"
+        tools:text="Artist Name"
+        android:textSize="@dimen/textSize2"
+        android:textStyle="bold" />
+
+    <!-- Seek Bar -->
+    <SeekBar
+        android:id="@+id/now_playing_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Player Buttons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relativeLayout"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/now_playing_prev_button"
+            android:layout_width="@dimen/button1"
+            android:layout_height="@dimen/button1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin1"
+            android:layout_toLeftOf="@id/now_playing_button"
+            android:background="@null"
+            android:src="@drawable/back_button"
+            android:scaleType="fitCenter"
+            android:layout_toStartOf="@id/now_playing_button"
+            android:layout_marginStart="@dimen/margin1" />
+
+        <ImageButton
+            android:id="@+id/now_playing_button"
+            android:layout_width="@dimen/button2"
+            android:layout_height="@dimen/button2"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin3"
+            android:layout_marginRight="@dimen/margin3"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/play_button" />
+
+        <ImageButton
+            android:id="@+id/now_playing_next_button"
+            android:layout_width="@dimen/button1"
+            android:layout_height="@dimen/button1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin1"
+            android:layout_marginEnd="@dimen/margin1"
+            android:layout_toRightOf="@id/now_playing_button"
+            android:background="@null"
+            android:src="@drawable/next_button"
+            android:scaleType="fitCenter"
+            android:layout_toEndOf="@id/now_playing_button" />
+
+    </RelativeLayout>
+
+</LinearLayout>
